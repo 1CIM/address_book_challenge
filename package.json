@@ -1,0 +1,16 @@
+{
+  "name": "address_book_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/1CIM/address_book_challenge.git",
+  "author": "kim_haaga <kim.haaga@live.se>",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^6.8.0",
+    "superstatic": "^7.1.0"
+  },
+  "scripts": {
+    "start": "superstatic src --port 3000",
+    "cy:open": "yarn start & cypress open"
+  }
+}
