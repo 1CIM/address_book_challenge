@@ -11,7 +11,7 @@ describe('Application', () => {
 
   describe('user can create a contact', () => {
 
-    it('tests', () => {
+    it('tests the contact inputs', () => {
       cy.get('#add-contact').click()
       cy.get('#name').type('Kim')
       cy.get('#nickname').type('Svampen')
@@ -21,6 +21,15 @@ describe('Application', () => {
       cy.get('#notes').type('Decent r6s player')
       cy.get('#twitter').type('none')
       cy.get('#github').type('1cim')
+      cy.get('#submit').click()
+    });
+
+    it('displays a name of the new contact', () => {
+      cy.get('#contact-list').should('contain', 'Kim')
+    });
+
+    it('displays the phone number of the new contact', () => {
+      cy.get('#contact-list').should('contain', '0703 373737')
     });
   });
 });
