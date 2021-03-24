@@ -17,6 +17,7 @@ describe('Application', () => {
       cy.get('#nickname').type('Svampen')
       cy.get('#email').type('kim.haaga@live.se')
       cy.get('#phone').type('0703 373737')
+      cy.get('#countrie').type('Sweden')
       cy.get('#company').type('Student')
       cy.get('#notes').type('Decent r6s player')
       cy.get('#twitter').type('none')
