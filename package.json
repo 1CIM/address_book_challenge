@@ -11,6 +11,11 @@
   },
   "scripts": {
     "start": "superstatic src --port 3000",
+    "start:hot": "node server.js",
     "cy:open": "yarn start & cypress open"
+  },
+
+  "dependencies": {
+    "browser-sync": "^2.26.14"
   }
 }

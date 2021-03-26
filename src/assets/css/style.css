@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(133, 139, 146);
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  margin-top: 25px;
+  width: 25%;
+  border: 3px solid black;
+  padding: -20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#main {
+  background-color: darkcyan;
+  padding: 20px;
+  border-radius: 17px;
+}
+
+input[type="email"], textarea[type='text'], input[type="text"] {
+  width: 100%;
+  padding: 5px 1px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+textarea[type="text"] {
+  border-radius: 13px;
+}
+
+label{
+  text-decoration: underline black;
+}
+
+button, input[type="submit"] {
+  background-color: burlywood;
+  border: none;
+  border-radius: 12px;
+  color: rgb(88, 23, 23);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+}
