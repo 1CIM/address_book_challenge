@@ -12,10 +12,9 @@ const renderContacts = () => {
       let li = document.createElement('li')
 
       li.innerHTML = `
-      <span>${contact.name}</span> |
-      <span>${contact.nickname}</span> |
+      <span>${contact.name} </span> |
       <span>${contact.email}</span> |
-      <span>${contact.phone}</span> 
+      <span>${contact.phone}</span>
       `
       ul.appendChild(li)
     });

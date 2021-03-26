@@ -29,7 +29,17 @@ describe('Application', () => {
     });
 
     it('displays the phone number of the new contact', () => {
-      cy.get('#contact-list').should('contain', '0703 373737')
+      cy.get('#contact-list').should('contain', '0703373737')
+    });
+  });
+
+  describe('User need to fill in required', () => {
+    it('tests if required is filled in', () => {
+      cy.get('#submit').click()
+      cy.get('input:invalid').should('have.length', 3)
+      cy.get('#name').then(($input) => {
+        expect($input[0].validationMessage).to.eq('Please fill in this field.')
+      });
     });
   });
 });
