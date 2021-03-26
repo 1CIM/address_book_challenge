@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       github: github.value,
     }
 
-    console.log(contact)
+    console.log(contact) // ust for manually testing
 
     let contacts = JSON.parse(storage.getItem('contacts')) || []
 
