@@ -14,7 +14,9 @@ const renderContacts = () => {
       li.innerHTML = `
       <span>${contact.name} </span> |
       <span>${contact.email}</span> |
-      <span>${contact.phone}</span>
+      <span>${contact.phone}</span> | 
+      <br>
+      <a class='edit' href='./editPage.html'>Edit</a>
       `
       ul.appendChild(li)
     });

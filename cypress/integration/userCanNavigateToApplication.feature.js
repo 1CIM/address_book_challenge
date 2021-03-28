@@ -42,4 +42,16 @@ describe('Application', () => {
       });
     });
   });
+
+  describe('User can edit contact', () => {
+
+    it('check contents of created objects', () => {
+      cy.get('#contact-list').children().should('contain', 'kim', '0703372022', 'kim.haaga@live.se')
+      cy.get('.edit').click()
+    });
+    
+    it('User arrives to edit page', () => {
+      cy.get('#editHeading').should('contain', 'Edit Contact')
+    });
+  });
 });
